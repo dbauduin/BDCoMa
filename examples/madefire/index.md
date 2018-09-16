@@ -1,4 +1,4 @@
-﻿`(Original version: [index.json](index.json))`
+﻿`(Original version: `[`index.json`](index.json)`)`
 
 {  
   "firstPage": "eff6537bdc7a3d4d4fb4446d1e4ec0cf",  
