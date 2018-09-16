@@ -46,18 +46,18 @@
 {  
      "@context": "https://readium.org/webpub-manifest/context.jsonld",  
 
-     "metadata": [**@Metadata**](@metadata),  
+     "metadata": [**@Metadata**](#metadata),  
 
      "spine": [  
-          [**@Page**](@page)  
+          [**@Page**](#page)  
      ],  
 
      "sections": [  
-          [**@Section**](@section)  
+          [**@Section**](#section)  
      ],  
 
      "renditions": [  
-          [**@Rendition**](@rendition)  
+          [**@Rendition**](#rendition)  
      ],  
 
      "resources": [],  
@@ -85,11 +85,11 @@
           ]  
      },  
      "publisher": [**@Entity**](#entity),  
-     "readingProgression": [@readingProgression](readingprogression),  
+     "readingProgression": [@readingProgression](#readingprogression),  
      "numberOfPages": [@uint](#uint),  
      "position": [@uint](#uint),  
      "description": "*`Description of the publication/chapter`*",  
-     "cover": [**@Cover**](@cover)  
+     "cover": [**@Cover**](#cover)  
 }
 
 
@@ -119,12 +119,12 @@
 ### Rendition
 
 {  
-     "metadata": [**@Metadata**](@metadata),  
+     "metadata": [**@Metadata**](#metadata),  
      "spine": [  
-          [**@Page**](@page)  
+          [**@Page**](#page)  
      ],  
      "sections": [  
-          [**@Section**](@section)  
+          [**@Section**](#section)  
      ]  
 }
 
@@ -132,9 +132,9 @@
 ### Section
 
 {  
-     "metadata": [**@Metadata**](@metadata),  
+     "metadata": [**@Metadata**](#metadata),  
      "spine": [  
-          [**@Page**](@page)  
+          [**@Page**](#page)  
      ]  
 }
 
@@ -159,7 +159,7 @@
      "layers": [  
           [**@Layer**](#layer)  
      ],  
-     "cover": [**@Cover**](@cover)  
+     "cover": [**@Cover**](#cover)  
 }
 
 
@@ -434,6 +434,8 @@ Combination of these terms, separated by `|`:
    - The value of this property must have the type [@int](#int)
 
 #### `timingFunction`
+
+See https://easings.net/.
 
 - "`linear`"
 
