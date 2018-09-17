@@ -190,7 +190,7 @@
 ### Transition
 
 {  
-     "effect": "[@transitionEffect](transitioneffect)",  
+     "effect": "[@transitionEffect](#transitioneffect)",  
      "duration": [@duration](#duration),  
      "timing-function": [@timingFunction](#timingfunction),  
      "controllable": [@boolean](#boolean),  
