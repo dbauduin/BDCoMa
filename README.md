@@ -9,6 +9,13 @@ Traditional (with eventually transition between pages)  |  Scrollable (with even
 
 Here is a suggestion of [**manifest specifications**](manifest.md), in relation with the [EDRLab Working group](https://github.com/edrlab/bd-comics-manga), and an illustration of the implementation for each of this book type.
 
+- [Manifest](manifest.md)
+- Example of implementation:
+   - [Traditional book](examples/LeTueur/manifest.md)
+   - Scrollable book
+   - Turbomedia
+
+
 ## [Manifest](manifest.md)
 
 {  
