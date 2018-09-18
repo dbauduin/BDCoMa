@@ -1,8 +1,8 @@
 ﻿# Brothers Bond - Episode 2
 
-## Episode content
-
 ![Brothers Bond 2](BrothersBond2.gif "Brothers Bond 2")
+
+## Episode content
 
 *`(Original version: `[`motiontoonJson.json`](motiontoonJson.json)`)`*
 

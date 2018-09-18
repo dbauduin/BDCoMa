@@ -1,8 +1,8 @@
 ﻿# Madefire - Overwatch - Yeti Hunt
 
-## Index
-
 ![Overwatch - Yeti Hunt](Overwatch.gif "Overwatch - Yeti Hunt")
+
+## Index
 
 *`(Original version: `[`index.json`](index.json)`)`*
 
