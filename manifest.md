@@ -176,7 +176,7 @@ Examples:
 
 ![Example 1](resources/Page-Unspecified.png "Example 1") | ![Example 2](resources/Page-1.png "Example 2") | ![Example 3](resources/Page-2.png "Example 3")
 ---|---|---
-Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height": 300,<br/>    "fit": "both",<br/>    "position": "center"<br/>}  |  Page:<br/>{<br/>    "width": 1000,<br/>    "height": 300,<br/>    "fit": "4:3",<br/>    "position": "start|center_vertical"<br/>}
+Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height": 300,<br/>    "fit": "both",<br/>    "position": "center"<br/>}  |  Page:<br/>{<br/>    "width": 1000,<br/>    "height": 300,<br/>    "fit": "4:3",<br/>    "position": "start\|center_vertical"<br/>}
 
 
 ### Background
