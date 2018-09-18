@@ -142,14 +142,19 @@
 ### Page
 
 {  
-     "href": "*`Path to resource`*",  
-     "type": [@resourceType](#resourcetype),  
      "width": [@uint](#uint),  
      "height": [@uint](#uint),  
-     "properties": {  
+     "fit": [@fitType](#fittype),  
+     "position": [@positionMask](#positionmask),  
+     "content": {  
+          "type": [@resourceType](#resourcetype),  
+          "href": "*`Path to resource`*",  
+          "width": [@uint](#uint),  
+          "height": [@uint](#uint),  
           "fit": [@fitType](#fittype),  
-          "position": [@positionMask](#positionmask),  
-          "scrollable": [@boolean](#boolean),  
+          "position": [@positionMask](#positionmask)  
+     },  
+     "properties": {  
           [@transitionType](#transitiontype): [**@Transition**](#transition),  
           "fragments": [  
                [**@Fragment**](#fragment)  
@@ -161,6 +166,17 @@
      ],  
      "cover": [**@Cover**](#cover)  
 }
+
+**Note:**  
+At the page level, `width`, `height`, `fit` and `position` define the reader viewport. If not specified, the viewport is the device window.  
+The combination of these values determines if the page is scrollable and if yes, the direction of the scroll.  
+  
+Examples:  
+![Legend](resources/Page-Legend.png "Legend")
+
+![Example 1](resources/Page-Unspecified.png "Example 1") | ![Example 2](resources/Page-1.png "Example 2") | ![Example 3](resources/Page-2.png "Example 3")
+---|---|---
+Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height": 300,<br/>    "fit": "both",<br/>    "position": "center"<br/>}  |  Page:<br/>{<br/>    "width": 1000,<br/>    "height": 300,<br/>    "fit": "4:3",<br/>    "position": "start|center_vertical"<br/>}
 
 
 ### Background

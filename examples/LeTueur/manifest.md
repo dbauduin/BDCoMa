@@ -67,10 +67,14 @@ Example of a traditional book made up of 3 pages with an animated transition bet
   
     "spine": [  
         {  
-            "href": "[0.jpg](0.jpg)",  
-            "type": "image/jpeg",  
-            "width": 1536,  
-            "height": 2048,  
+            "content": {  
+                "href": "[0.jpg](0.jpg)",  
+                "type": "image/jpeg",  
+                "width": 1536,  
+                "height": 2048,  
+                "fit": "both",  
+                "positionMask": "center"  
+            },  
             "properties": {  
                 "fragments": [  
                     {"width": 864, "height": 635, "x": 40, "y": 64},  
@@ -84,10 +88,14 @@ Example of a traditional book made up of 3 pages with an animated transition bet
             }  
         },  
         {  
-            "href": "[1.jpg](1.jpg)",  
-            "type": "image/jpeg",  
-            "width": 1536,  
-            "height": 2048,  
+            "content": {  
+                "href": "[1.jpg](1.jpg)",  
+                "type": "image/jpeg",  
+                "width": 1536,  
+                "height": 2048,  
+                "fit": "both",  
+                "positionMask": "center"  
+            },  
             "properties": {  
                 "transition-forward": {  
                     "effect": "images",  
@@ -116,10 +124,14 @@ Example of a traditional book made up of 3 pages with an animated transition bet
             }  
         },  
         {  
-            "href": "[2.jpg](2.jpg)",  
-            "type": "image/jpeg",  
-            "width": 1536,  
-            "height": 2048,  
+            "content": {  
+                "href": "[2.jpg](2.jpg)",  
+                "type": "image/jpeg",  
+                "width": 1536,  
+                "height": 2048,  
+                "fit": "both",  
+                "positionMask": "center"  
+            },  
             "properties": {  
                 "fragments": [  
                     {"width": 1009, "height": 921, "x": 35, "y": 71},  
