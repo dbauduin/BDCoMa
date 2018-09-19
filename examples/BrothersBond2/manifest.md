@@ -230,3 +230,10 @@ Example of a scrollable book with animations, adapted from this:
   
     "links": []  
 }  
+
+
+---
+
+**This gives these states:**
+
+![Scrollable sample](states.jpg "Scrollable sample")
