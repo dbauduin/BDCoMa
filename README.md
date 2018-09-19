@@ -54,7 +54,36 @@ The scroll can't be determine by the image size and the fit property:
 - May be the author intentionally provided a large background image to manage different window ratios
 - It shouldn't be mandatory to provide the couple (`type`, `href`) if we just want layers (it could be the case in webtoons for instance: the large/tall image can be tiled in several small pieces and each piece of this image is then distributed in layers). In this case, it would be difficult to know how to present the page.
 
-Consequently, I propose modifying the page structure like this: [Page](manifest.md#page).
+Consequently, I propose modifying the page structure like this:
+> {  
+>      "width": [@uint](manifest.md#uint),  
+>      "height": [@uint](manifest.md#uint),  
+>      "fit": [@fitType](manifest.md#fittype),  
+>      "position": [@positionMask](manifest.md#positionmask),  
+>      "content": {  
+>           "type": [@resourceType](manifest.md#resourcetype),  
+>           "href": "*`Path to resource`*",  
+>           "width": [@uint](manifest.md#uint),  
+>           "height": [@uint](manifest.md#uint),  
+>           "fit": [@fitType](manifest.md#fittype),  
+>           "position": [@positionMask](manifest.md#positionmask)  
+>      },  
+>      "layers": [  
+>           [**@Layer**](manifest.md#layer)  
+>      ],  
+>      ...  
+> }
+
+*(For a complete description, see [Page structure](manifest.md#page)).*  
+  
+This way, a page is visually defined by its size (`width`, `height`), a resource (`content`) and layers (`layers`) on top of it.  
+![Page description](resources/Page-Description1.png "Page description")  
+  
+The behaviour of this page inside the window (final size, position, scroll...) is determined by its original size, plus the `fit` and `position` parameters.  
+![Page description](resources/Page-Description2.png "Page description")  
+  
+For more information, see [Page](manifest.md#page).
+
 
 ### Animations
 
