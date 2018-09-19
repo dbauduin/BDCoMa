@@ -12,7 +12,7 @@ Here is a suggestion of manifest specifications, in relation with the [EDRLab Wo
 - **[Manifest](manifest.md)**
 - **Example of implementation:**
    - [Traditional book](examples/LeTueur/manifest.md)
-   - Scrollable book
+   - [Scrollable book](examples/BrothersBond2/manifest.md)
    - Turbomedia
 - **Other platforms implementation:**
    - [Madefire *(example of a turbomedia)*](others/Madefire/index.md)

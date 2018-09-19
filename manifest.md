@@ -257,6 +257,7 @@ Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height"
           "x": [@ufloat](#ufloat),  
           "y": [@ufloat](#ufloat)  
      },  
+     "z-index": [@int](#int),  
      "path": "[@path](#path)",  
      "resources": [  
           {  
@@ -275,8 +276,18 @@ Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height"
 ### Animation
 
 {  
-     "start": [@uint](#uint),  
-     "duration": [@uint](#uint),  
+     "start": {  
+          "position": {  
+               "x": [@float](#float),  
+               "y": [@float](#float)  
+          },  
+          "delay": [@duration](#duration)  
+     },  
+     "end": {  
+          "x": [@float](#float),  
+          "y": [@float](#float)  
+     },  
+     "duration": [@duration](#duration),  
      "timing-function": [@timingFunction](#timingfunction),  
      "sequence": [  
           [**@Animation-sequence**](#animation-sequence)  

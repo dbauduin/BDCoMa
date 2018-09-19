@@ -5,25 +5,9 @@ Example of a traditional book made up of 3 pages with an animated transition bet
 ![Traditional sample](LeTueur.gif "Traditional sample")
 
 
-## Source images
-
-- [Cover.jpg](cover.jpg)
-- [Page 1](0.jpg)
-- [Page 2](1.jpg)
-   - [Transition image 1](1-01.jpg)
-   - [Transition image 2](1-02.jpg)
-   - [Transition image 3](1-03.jpg)
-   - [Transition image 4](1-04.jpg)
-   - [Transition image 5](1-05.jpg)
-   - [Transition image 6](1-06.jpg)
-   - [Transition image 7](1-07.jpg)
-   - [Transition image 8](1-08.jpg)
-   - [Transition image 9](1-09.jpg)
-   - [Transition image 10](1-10.jpg)
-- [Page 3](2.jpg)
-
-
 ## Manifest
+
+*`(Original version: `[`manifest.json`](manifest.json)`)`*
 
 {  
     "@context": "https://readium.org/webpub-manifest/context.jsonld",  
@@ -58,7 +42,7 @@ Example of a traditional book made up of 3 pages with an animated transition bet
         "position": 0,  
         "description": "Long feu est l'autobiographie d'un tueur professionnel. Un homme solitaire et froid, méthodique et consciencieux, qui ne s'embarrasse pas de scrupules ni de regrets. Alors qu'il guette sa prochaine victime, nous partageons ses pensées, nous apprenons à le connaître, nous découvrons sa vie à travers de nombreux flash-back. Plus l'attente dure et plus il s'énerve, il nous entraîne dans des abîmes de violence, jusqu'à l'explosion finale. Mais les cartes seraient-elles truquées ? Gare aux éclaboussures...",  
         "cover": {  
-            "href": "[cover.jpg](cover.jpg)",  
+            "href": "[cover.jpg](cover.jpg)" ![cover.jpg](thumbnails/cover.jpg "cover.jpg"),  
             "type": "image/jpeg",  
             "width": 1536,  
             "height": 2048  
@@ -68,7 +52,7 @@ Example of a traditional book made up of 3 pages with an animated transition bet
     "spine": [  
         {  
             "content": {  
-                "href": "[0.jpg](0.jpg)",  
+                "href": "[0.jpg](0.jpg)" ![0.jpg](thumbnails/0.jpg "0.jpg"),  
                 "type": "image/jpeg",  
                 "width": 1536,  
                 "height": 2048,  
@@ -89,7 +73,7 @@ Example of a traditional book made up of 3 pages with an animated transition bet
         },  
         {  
             "content": {  
-                "href": "[1.jpg](1.jpg)",  
+                "href": "[1.jpg](1.jpg)" ![1.jpg](thumbnails/1.jpg "1.jpg"),  
                 "type": "image/jpeg",  
                 "width": 1536,  
                 "height": 2048,  
@@ -102,16 +86,16 @@ Example of a traditional book made up of 3 pages with an animated transition bet
                     "duration": 1500,  
                     "controllable": true,  
                     "resources": [  
-                         {"href": "[1-01.jpg](1-01.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-02.jpg](1-02.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-03.jpg](1-03.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-04.jpg](1-04.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-05.jpg](1-05.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-06.jpg](1-06.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-07.jpg](1-07.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-08.jpg](1-08.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-09.jpg](1-09.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
-                         {"href": "[1-10.jpg](1-10.jpg)", "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838}  
+                         {"href": "[1-01.jpg](1-01.jpg)" ![1-01.jpg](thumbnails/1-01.jpg "1-01.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-02.jpg](1-02.jpg)" ![1-02.jpg](thumbnails/1-02.jpg "1-02.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-03.jpg](1-03.jpg)" ![1-03.jpg](thumbnails/1-03.jpg "1-03.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-04.jpg](1-04.jpg)" ![1-04.jpg](thumbnails/1-04.jpg "1-04.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-05.jpg](1-05.jpg)" ![1-05.jpg](thumbnails/1-05.jpg "1-05.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-06.jpg](1-06.jpg)" ![1-06.jpg](thumbnails/1-06.jpg "1-06.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-07.jpg](1-07.jpg)" ![1-07.jpg](thumbnails/1-07.jpg "1-07.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-08.jpg](1-08.jpg)" ![1-08.jpg](thumbnails/1-08.jpg "1-08.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-09.jpg](1-09.jpg)" ![1-09.jpg](thumbnails/1-09.jpg "1-09.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838},  
+                         {"href": "[1-10.jpg](1-10.jpg)" ![1-10.jpg](thumbnails/1-10.jpg "1-10.jpg"), "type": "image/jpeg", "width": 1475, "height": 1167, "x": 35, "y": 838}  
                     ]  
                 },  
                 "fragments": [  
@@ -125,7 +109,7 @@ Example of a traditional book made up of 3 pages with an animated transition bet
         },  
         {  
             "content": {  
-                "href": "[2.jpg](2.jpg)",  
+                "href": "[2.jpg](2.jpg)" ![2.jpg](thumbnails/2.jpg "2.jpg"),  
                 "type": "image/jpeg",  
                 "width": 1536,  
                 "height": 2048,  
