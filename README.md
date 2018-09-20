@@ -11,8 +11,15 @@ Here is a suggestion of manifest specifications, in relation with the [EDRLab Wo
 
 - **[Manifest](manifest.md)**
 - **Example of implementation:**
-   - [Traditional book](examples/LeTueur/manifest.md)
-   - [Scrollable book](examples/BrothersBond2/manifest.md)
+   - [Traditional book](examples/LeTueur/manifest.md)  
+      *This example illustrates:*
+      - [*Transitions*](manifest.md#transition)
+      - [*Fragments*](manifest.md#fragment) *(for guided navigation)*
+   - [Scrollable book](examples/BrothersBond2/manifest.md)  
+      *This example illustrates:*
+      - [*Sections*](manifest.md#section)
+      - [*Layers*](manifest.md#layer)
+      - [*Animations*](manifest.md#animation)
    - Turbomedia
 - **Other platforms implementation:**
    - [Madefire *(example of a turbomedia)*](others/Madefire/index.md)
@@ -96,3 +103,11 @@ So here is a suggestion of how to animate a [Layer](manifest.md#layer) with [Ani
 Studying what the others do in their proprietary format, I have notice the need of gradient background. I have thus suggested a way to integrate them in our format.  
   
 See [Background](manifest.md#background) in the [manifest](manifest.md).
+
+
+### Metadata
+
+*In reference to [Web Publication Manifest - Context](https://readium.org/webpub-manifest/context.jsonld)*
+
+I think `modified` and `published` keys may suggest that they correspond to booleans. Moreover, a publication date may be in the future.  
+For these reasons, I think we should rename them to `modificationDate` and `publicationDate`.
