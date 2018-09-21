@@ -9,25 +9,27 @@ Traditional (with eventually transition between pages)  |  Scrollable (with even
 
 Here is a suggestion of manifest specifications, in relation with the [EDRLab Working group](https://github.com/edrlab/bd-comics-manga), and an illustration of the implementation for each of this book type.
 
-- **[Manifest](manifest.md)**
-- **Example of implementation:**
-   - [Traditional book](examples/LeTueur/manifest.md)  
+▶ **[Manifest](manifest.md)**
+
+▶ **Example of implementation:**
+   - [**Traditional book**](examples/LeTueur/manifest.md)  
       *This example illustrates:*
       - [*Transitions*](manifest.md#transition)
       - [*Fragments*](manifest.md#fragment) *(for guided navigation)*
-   - [Scrollable book](examples/BrothersBond2/manifest.md)  
+   - [**Scrollable book**](examples/BrothersBond2/manifest.md)  
       *This example illustrates:*
       - [*Sections*](manifest.md#section)
       - [*Layers*](manifest.md#layer)
       - [*Animations*](manifest.md#animation)
-   - [Turbomedia](examples/Overwatch/manifest.md)  
+   - [**Turbomedia**](examples/Overwatch/manifest.md)  
       *This example illustrates:*
       - [*Transitions*](manifest.md#transition)
       - [*Layers*](manifest.md#layer)
       - [*Animations*](manifest.md#animation)
-- **Other platforms implementation:**
-   - [Madefire *(example of a turbomedia)*](others/Madefire/index.md)
-   - [Webtoon *(example of a scrollable book)*](others/Webtoon/episodeInfo.md)
+
+▶ **Other platforms implementation:**
+   - [**Madefire** *(example of a turbomedia)*](others/Madefire/index.md)
+   - [**Webtoon** *(example of a scrollable book)*](others/Webtoon/episodeInfo.md)
 
 
 ## Notes
