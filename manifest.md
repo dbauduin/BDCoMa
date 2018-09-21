@@ -36,6 +36,8 @@
    - [positionMask](#positionmask)
    - [transitionType](#transitiontype)
    - [transitionEffect](#transitioneffect)
+   - [directionMask](#directionmask)
+   - [spreadGroup](#spreadgroup)
    - [animationProperty](#animationproperty)
    - [timingFunction](#timingfunction)
    - [path](#path)
@@ -159,6 +161,10 @@
           "fragments": [  
                [**@Fragment**](#fragment)  
           ],  
+          "spread": {  
+               "index": [@uint](#uint),  
+               "group": [@spreadGroup](#spreadgroup)  
+          },  
           "background": [**@Background**](#background)  
      },  
      "layers": [  
@@ -206,7 +212,8 @@ Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height"
 ### Transition
 
 {  
-     "effect": "[@transitionEffect](#transitioneffect)",  
+     "effect": [@transitionEffect](#transitioneffect),  
+     "from": [@directionMask](#directionMask),  
      "duration": [@duration](#duration),  
      "timing-function": [@timingFunction](#timingfunction),  
      "controllable": [@boolean](#boolean),  
@@ -434,6 +441,21 @@ Combination of these terms, separated by `|`:
 - "`wipe`": The next page appears first on a corner, right, left, top or bottom, then spreads to the other corner, as the current slide fades.
 - "`split`": The next page appears first on the center, on a vertical or horizontal axis, then spreads to the corners, as the current slide fades.
 - "`images`": A sequence of image resources are displayed between the current and next page.
+
+#### `directionMask`
+
+Combination of these terms, separated by `|`:
+- "`left`"
+- "`right`"
+- "`top`""
+- "`bottom`"
+
+
+#### `spreadGroup`
+
+- "`always`"
+- "`if_possible`"
+- "`never`"
 
 #### `animationProperty`
 

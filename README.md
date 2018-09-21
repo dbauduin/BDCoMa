@@ -20,7 +20,11 @@ Here is a suggestion of manifest specifications, in relation with the [EDRLab Wo
       - [*Sections*](manifest.md#section)
       - [*Layers*](manifest.md#layer)
       - [*Animations*](manifest.md#animation)
-   - Turbomedia
+   - [Turbomedia](examples/Overwatch/manifest.md)  
+      *This example illustrates:*
+      - [*Transitions*](manifest.md#transition)
+      - [*Layers*](manifest.md#layer)
+      - [*Animations*](manifest.md#animation)
 - **Other platforms implementation:**
    - [Madefire *(example of a turbomedia)*](others/Madefire/index.md)
    - [Webtoon *(example of a scrollable book)*](others/Webtoon/episodeInfo.md)
