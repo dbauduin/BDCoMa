@@ -16,9 +16,15 @@ Here is a suggestion of manifest specifications, in relation with the [EDRLab Wo
       *This example illustrates:*
       - [*Transitions*](manifest.md#transition)
       - [*Fragments*](manifest.md#fragment) *(for guided navigation)*
-   - [**Scrollable book**](examples/BrothersBond2/manifest.md)  
+   - [**Scrollable book (1)**](examples/BrothersBond2/manifest.md)  
       *This example illustrates:*
       - [*Sections*](manifest.md#section)
+      - [*Layers*](manifest.md#layer)
+      - [*Animations*](manifest.md#animation)
+   - [**Scrollable book (2)**](examples/Electrozz/manifest.md)  
+      *This example illustrates:*
+      - *Use of sprite sheets*
+      - [*Snap points*](manifest.md#snappoint)
       - [*Layers*](manifest.md#layer)
       - [*Animations*](manifest.md#animation)
    - [**Turbomedia**](examples/Overwatch/manifest.md)  

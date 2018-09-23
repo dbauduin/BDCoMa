@@ -401,7 +401,9 @@ Example of a turbomedia, adapted from this:
                             "href": "[images/2/820c09538863bab68b3e86370af1f5ae.png](images/2/820c09538863bab68b3e86370af1f5ae.png) ![images/2/820c09538863bab68b3e86370af1f5ae.png](images/2/thumbnails/820c09538863bab68b3e86370af1f5ae.png "images/2/820c09538863bab68b3e86370af1f5ae.png"),  
                             "duration": 77  
                         }  
-                    ] ![result](thumbnails/robot.gif "result"),  
+                    ],  
+                    "loops": 0,  
+                    ![result](thumbnails/robot.gif "result")  
                     "animations": [  
                         {  
                             "duration": 1000,  

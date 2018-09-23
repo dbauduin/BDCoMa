@@ -389,6 +389,7 @@
                             "duration": 77
                         }
                     ],
+                    "loops": 0,
                     "animations": [
                         {
                             "duration": 1000,

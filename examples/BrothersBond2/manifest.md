@@ -1,4 +1,4 @@
-# Scrollable book example
+# Scrollable book example (1)
 
 Example of a scrollable book with animations, adapted from this:  
   

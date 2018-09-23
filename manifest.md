@@ -15,6 +15,7 @@
    - [Transition resource](#transition-resource)
    - [Fragment](#fragment)
    - [Layer](#layer)
+   - [SnapPoint](#Snappoint)
    - [Animation](#animation)
    - [Animation sequence](#animation-sequence)
 - [Types](#types)
@@ -34,6 +35,7 @@
    - [gradientType](#gradienttype)
    - [fitType](#fittype)
    - [positionMask](#positionmask)
+   - [snap-alignment](#snap-alignment)
    - [transitionType](#transitiontype)
    - [transitionEffect](#transitioneffect)
    - [directionMask](#directionmask)
@@ -165,6 +167,9 @@
                "index": [@uint](#uint),  
                "group": [@spreadGroup](#spreadgroup)  
           },  
+          "snap-points": [  
+               [**@SnapPoint**](#snappoint)  
+          ],  
           "background": [**@Background**](#background)  
      },  
      "layers": [  
@@ -273,10 +278,21 @@ Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height"
                "duration": [@duration](#duration)  
           }  
      ],  
+     "loops": [@uint](#uint),    `Default: 1 (no repeat)`  
      "background": [**@Background**](#background),  
      "animations": [  
           [**@Animation**](#animation)  
      ]  
+}
+
+
+### SnapPoint
+
+{  
+     "identifier": "*`Identifier`*",  
+     "x": [@ufloat](#ufloat),  
+     "y": [@ufloat](#ufloat),  
+     "alignment": [@snap-alignment](#snap-alignment)  
 }
 
 
@@ -288,7 +304,8 @@ Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height"
                "x": [@float](#float),  
                "y": [@float](#float)  
           },  
-          "delay": [@duration](#duration)  
+          "delay": [@duration](#duration),  
+          "snap-point": "*`Snap point identifier`*"
      },  
      "end": {  
           "x": [@float](#float),  
@@ -427,6 +444,13 @@ Combination of these terms, separated by `|`:
 - "`center_vertical`"
 
 > **Note:** The default position is `top|start`.
+
+#### `snap-alignment`
+
+- "`none`"
+- "`start`"
+- "`end`"
+- "`center`"
 
 #### `transitionType`
 
