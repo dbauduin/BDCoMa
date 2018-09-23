@@ -324,42 +324,42 @@ Example of a scrollable book with snap points and animations:
                          "resources": [  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-01](images/thumbnails/07-01.png "07-01"),  
+                                   "href": "[images/07.jpg#0,0,302.625,270](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-01](images/thumbnails/07-01.png "07-01"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-02](images/thumbnails/07-02.png "07-02"),  
+                                   "href": "[images/07.jpg#302.625,0,605.25,270](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-02](images/thumbnails/07-02.png "07-02"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-03](images/thumbnails/07-03.png "07-03"),  
+                                   "href": "[images/07.jpg#605.25,0,907.875,270](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-03](images/thumbnails/07-03.png "07-03"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-04](images/thumbnails/07-04.png "07-04"),  
+                                   "href": "[images/07.jpg#907.875,0,1210.5,270](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-04](images/thumbnails/07-04.png "07-04"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-05](images/thumbnails/07-05.png "07-05"),  
+                                   "href": "[images/07.jpg#1210.5,0,1513.125,270](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-05](images/thumbnails/07-05.png "07-05"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-06](images/thumbnails/07-06.png "07-06"),  
+                                   "href": "[images/07.jpg#1513.125,0,1815.75,270](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-06](images/thumbnails/07-06.png "07-06"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-07](images/thumbnails/07-07.png "07-07"),  
+                                   "href": "[images/07.jpg#1815.75,0,2118.375,270](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-07](images/thumbnails/07-07.png "07-07"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-08](images/thumbnails/07-08.png "07-08"),  
+                                   "href": "[images/07.jpg#2118.375,0,2421,270](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-08](images/thumbnails/07-08.png "07-08"),  
                                    "duration": 80  
                               }  
                          ],  

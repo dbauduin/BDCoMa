@@ -313,42 +313,42 @@
                     "resources": [
                         {
                             "type": "image/jpeg",
-                            "href": "images/07#0,0,302.625,270.jpg",
+                            "href": "images/07.jpg#0,0,302.625,270",
                             "duration": 80
                         },
                         {
                             "type": "image/jpeg",
-                            "href": "images/07#302.625,0,605.25,270.jpg",
+                            "href": "images/07.jpg#302.625,0,605.25,270",
                             "duration": 80
                         },
                         {
                             "type": "image/jpeg",
-                            "href": "images/07#605.25,0,907.875,270.jpg",
+                            "href": "images/07.jpg#605.25,0,907.875,270",
                             "duration": 80
                         },
                         {
                             "type": "image/jpeg",
-                            "href": "images/07#907.875,0,1210.5,270.jpg",
+                            "href": "images/07.jpg#907.875,0,1210.5,270",
                             "duration": 80
                         },
                         {
                             "type": "image/jpeg",
-                            "href": "images/07#1210.5,0,1513.125,270.jpg",
+                            "href": "images/07.jpg#1210.5,0,1513.125,270",
                             "duration": 80
                         },
                         {
                             "type": "image/jpeg",
-                            "href": "images/07#1513.125,0,1815.75,270.jpg",
+                            "href": "images/07.jpg#1513.125,0,1815.75,270",
                             "duration": 80
                         },
                         {
                             "type": "image/jpeg",
-                            "href": "images/07#1815.75,0,2118.375,270.jpg",
+                            "href": "images/07.jpg#1815.75,0,2118.375,270",
                             "duration": 80
                         },
                         {
                             "type": "image/jpeg",
-                            "href": "images/07#2118.375,0,2421,270.jpg",
+                            "href": "images/07.jpg#2118.375,0,2421,270",
                             "duration": 80
                         }
                     ],
