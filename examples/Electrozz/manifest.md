@@ -158,62 +158,62 @@ Example of a scrollable book with snap points and animations:
                          "resources": [  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#0,0,219,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-01](images/thumbnails/01-01.png "01-01"),  
+                                   "href": "[images/01.jpg#0,0,219,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-01](images/thumbnails/01-01.png "01-01"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#219,0,438,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-02](images/thumbnails/01-02.png "01-02"),  
+                                   "href": "[images/01.jpg#219,0,438,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-02](images/thumbnails/01-02.png "01-02"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#438,0,657,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-03](images/thumbnails/01-03.png "01-03"),  
+                                   "href": "[images/01.jpg#438,0,657,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-03](images/thumbnails/01-03.png "01-03"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#657,0,876,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-04](images/thumbnails/01-04.png "01-04"),  
+                                   "href": "[images/01.jpg#657,0,876,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-04](images/thumbnails/01-04.png "01-04"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#876,0,1095,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-05](images/thumbnails/01-05.png "01-05"),  
+                                   "href": "[images/01.jpg#876,0,1095,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-05](images/thumbnails/01-05.png "01-05"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#1095,0,1314,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-06](images/thumbnails/01-06.png "01-06"),  
+                                   "href": "[images/01.jpg#1095,0,1314,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-06](images/thumbnails/01-06.png "01-06"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#1314,0,1533,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-07](images/thumbnails/01-07.png "01-07"),  
+                                   "href": "[images/01.jpg#1314,0,1533,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-07](images/thumbnails/01-07.png "01-07"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#1533,0,1752,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-08](images/thumbnails/01-08.png "01-08"),  
+                                   "href": "[images/01.jpg#1533,0,1752,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-08](images/thumbnails/01-08.png "01-08"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#1752,0,1971,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-09](images/thumbnails/01-09.png "01-09"),  
+                                   "href": "[images/01.jpg#1752,0,1971,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-09](images/thumbnails/01-09.png "01-09"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#1971,0,2190,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-10](images/thumbnails/01-10.png "01-10"),  
+                                   "href": "[images/01.jpg#1971,0,2190,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-10](images/thumbnails/01-10.png "01-10"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#2190,0,2409,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-11](images/thumbnails/01-11.png "01-11"),  
+                                   "href": "[images/01.jpg#2190,0,2409,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-11](images/thumbnails/01-11.png "01-11"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/01.jpg#2409,0,2628,270" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-12](images/thumbnails/01-12.png "01-12"),  
+                                   "href": "[images/01.jpg#2409,0,2628,270](images/01.jpg)" ![01.jpg](images/thumbnails/01.jpg "01.jpg") ![01-12](images/thumbnails/01-12.png "01-12"),  
                                    "duration": 80  
                               }  
                          ],  
@@ -324,42 +324,42 @@ Example of a scrollable book with snap points and animations:
                          "resources": [  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07#0,0,302.625,270.jpg](images/07#0,0,302.625,270.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-01](images/thumbnails/07-01.png "07-01"),  
+                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-01](images/thumbnails/07-01.png "07-01"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07#302.625,0,605.25,270.jpg](images/07#302.625,0,605.25,270.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-02](images/thumbnails/07-02.png "07-02"),  
+                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-02](images/thumbnails/07-02.png "07-02"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07#605.25,0,907.875,270.jpg](images/07#605.25,0,907.875,270.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-03](images/thumbnails/07-03.png "07-03"),  
+                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-03](images/thumbnails/07-03.png "07-03"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07#907.875,0,1210.5,270.jpg](images/07#907.875,0,1210.5,270.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-04](images/thumbnails/07-04.png "07-04"),  
+                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-04](images/thumbnails/07-04.png "07-04"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07#1210.5,0,1513.125,270.jpg](images/07#1210.5,0,1513.125,270.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-05](images/thumbnails/07-05.png "07-05"),  
+                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-05](images/thumbnails/07-05.png "07-05"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07#1513.125,0,1815.75,270.jpg](images/07#1513.125,0,1815.75,270.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-06](images/thumbnails/07-06.png "07-06"),  
+                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-06](images/thumbnails/07-06.png "07-06"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07#1815.75,0,2118.375,270.jpg](images/07#1815.75,0,2118.375,270.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-07](images/thumbnails/07-07.png "07-07"),  
+                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-07](images/thumbnails/07-07.png "07-07"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "[images/07#2118.375,0,2421,270.jpg](images/07#2118.375,0,2421,270.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-08](images/thumbnails/07-08.png "07-08"),  
+                                   "href": "[images/07.jpg](images/07.jpg)" ![07.jpg](images/thumbnails/07.jpg "07.jpg") ![07-08](images/thumbnails/07-08.png "07-08"),  
                                    "duration": 80  
                               }  
                          ],  
@@ -433,17 +433,17 @@ Example of a scrollable book with snap points and animations:
                          "resources": [  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/13.jpg#0,0,236,270" ![13.jpg](images/thumbnails/13.jpg "13.jpg") ![13-01](images/thumbnails/13-01.png "13-01"),  
+                                   "href": "[images/13.jpg#0,0,236,270](images/13.jpg)" ![13.jpg](images/thumbnails/13.jpg "13.jpg") ![13-01](images/thumbnails/13-01.png "13-01"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/13.jpg#236,0,472,270" ![13.jpg](images/thumbnails/13.jpg "13.jpg") ![13-02](images/thumbnails/13-02.png "13-02"),  
+                                   "href": "[images/13.jpg#236,0,472,270](images/13.jpg)" ![13.jpg](images/thumbnails/13.jpg "13.jpg") ![13-02](images/thumbnails/13-02.png "13-02"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/13.jpg#472,0,708,270" ![13.jpg](images/thumbnails/13.jpg "13.jpg") ![13-03](images/thumbnails/13-03.png "13-03"),  
+                                   "href": "[images/13.jpg#472,0,708,270](images/13.jpg)" ![13.jpg](images/thumbnails/13.jpg "13.jpg") ![13-03](images/thumbnails/13-03.png "13-03"),  
                                    "duration": 80  
                               }  
                          ],  
@@ -503,12 +503,12 @@ Example of a scrollable book with snap points and animations:
                          "resources": [  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/15.jpg#0,0,206,270" ![15.jpg](images/thumbnails/15.jpg "15.jpg") ![15-01](images/thumbnails/15-01.png "15-01"),  
+                                   "href": "[images/15.jpg#0,0,206,270](images/15.jpg)" ![15.jpg](images/thumbnails/15.jpg "15.jpg") ![15-01](images/thumbnails/15-01.png "15-01"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/15.jpg#206,0,412,270" ![15.jpg](images/thumbnails/15.jpg "15.jpg") ![15-02](images/thumbnails/15-02.png "15-02"),  
+                                   "href": "[images/15.jpg#206,0,412,270](images/15.jpg)" ![15.jpg](images/thumbnails/15.jpg "15.jpg") ![15-02](images/thumbnails/15-02.png "15-02"),  
                                    "duration": 80  
                               }  
                          ],  
@@ -568,27 +568,27 @@ Example of a scrollable book with snap points and animations:
                          "resources": [  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/17.jpg#0,0,230.6,270" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-01](images/thumbnails/17-01.png "17-01"),  
+                                   "href": "[images/17.jpg#0,0,230.6,270](images/17.jpg)" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-01](images/thumbnails/17-01.png "17-01"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/17.jpg#230.6,0,461.2,270" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-02](images/thumbnails/17-02.png "17-02"),  
+                                   "href": "[images/17.jpg#230.6,0,461.2,270](images/17.jpg)" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-02](images/thumbnails/17-02.png "17-02"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/17.jpg#461.2,0,691.8,270" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-03](images/thumbnails/17-03.png "17-03"),  
+                                   "href": "[images/17.jpg#461.2,0,691.8,270](images/17.jpg)" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-03](images/thumbnails/17-03.png "17-03"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/17.jpg#691.8,0,922.4,270" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-04](images/thumbnails/17-04.png "17-04"),  
+                                   "href": "[images/17.jpg#691.8,0,922.4,270](images/17.jpg)" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-04](images/thumbnails/17-04.png "17-04"),  
                                    "duration": 80  
                               },  
                               {  
                                    "type": "image/jpeg",  
-                                   "href": "images/17.jpg#922.4,0,1153,270" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-05](images/thumbnails/17-05.png "17-05"),  
+                                   "href": "[images/17.jpg#922.4,0,1153,270](images/17.jpg)" ![17.jpg](images/thumbnails/17.jpg "17.jpg") ![17-05](images/thumbnails/17-05.png "17-05"),  
                                    "duration": 80  
                               }  
                          ],  
