@@ -6,7 +6,7 @@
 - [Definition](#definition)
    - [Metadata](#metadata)
    - [Entity](#entity)
-   - [Cover](#cover)
+   - [Link](#link)
    - [Rendition](#rendition)
    - [Section](#section)
    - [Page](#page)
@@ -30,11 +30,13 @@
    - [percentage](#percentage)
    - [duration](#duration)
    - [boolean](#boolean)
-   - [resourceType](#resourcetype)
    - [contributorType](#contributortype)
+   - [linkRelationship](#linkrelationship)
+   - [resourceType](#resourcetype)
+   - [fragmentType](#fragmenttype)
    - [gradientType](#gradienttype)
    - [fitType](#fittype)
-   - [positionMask](#positionmask)
+   - [position](#position)
    - [snap-alignment](#snap-alignment)
    - [transitionType](#transitiontype)
    - [transitionEffect](#transitioneffect)
@@ -52,7 +54,7 @@
 
      "metadata": [**@Metadata**](#metadata),  
 
-     "spine": [  
+     "readingOrder": [  
           [**@Page**](#page)  
      ],  
 
@@ -64,9 +66,13 @@
           [**@Rendition**](#rendition)  
      ],  
 
-     "resources": [],  
+     "resources": [  
+          [**@Link**](#link)  
+     ],  
 
-     "links": []  
+     "links": [  
+          [**@Link**](#link)  
+     ]  
 }
 
 
@@ -92,8 +98,7 @@
      "readingProgression": [@readingProgression](#readingprogression),  
      "numberOfPages": [@uint](#uint),  
      "position": [@uint](#uint),  
-     "description": "*`Description of the publication/chapter`*",  
-     "cover": [**@Cover**](#cover)  
+     "description": "*`Description of the publication/chapter`*"  
 }
 
 
@@ -110,11 +115,12 @@
 > **Note:** *It is thus possible to display the name of the entity (contributor or publisher) in the same language as the publication, or in the language of the device if this language is provided in translations.*
 
 
-### Cover
+### Link
 
 {  
+     "rel": [@linkRelationship](#linkrelationship),  
+     "type": [@resourceType](#resourcetype),  
      "href": "*`Path to resource`*",  
-     "type": "[@resourceType](#resourcetype)",  
      "width": [@uint](#uint),  
      "height": [@uint](#uint)  
 }
@@ -124,11 +130,17 @@
 
 {  
      "metadata": [**@Metadata**](#metadata),  
-     "spine": [  
+     "readingOrder": [  
           [**@Page**](#page)  
      ],  
      "sections": [  
           [**@Section**](#section)  
+     ],  
+     "resources": [  
+          [**@Link**](#link)  
+     ],  
+     "links": [  
+          [**@Link**](#link)  
      ]  
 }
 
@@ -137,8 +149,14 @@
 
 {  
      "metadata": [**@Metadata**](#metadata),  
-     "spine": [  
+     "readingOrder": [  
           [**@Page**](#page)  
+     ],  
+     "resources": [  
+          [**@Link**](#link)  
+     ],  
+     "links": [  
+          [**@Link**](#link)  
      ]  
 }
 
@@ -146,21 +164,24 @@
 ### Page
 
 {  
+     "identifier": "*`Identifier`*",  
      "width": [@uint](#uint),  
      "height": [@uint](#uint),  
      "fit": [@fitType](#fittype),  
-     "position": [@positionMask](#positionmask),  
+     "position-x": [@position](#position),  
+     "position-y": [@position](#position),  
      "content": {  
           "type": [@resourceType](#resourcetype),  
           "href": "*`Path to resource`*",  
           "width": [@uint](#uint),  
           "height": [@uint](#uint),  
           "fit": [@fitType](#fittype),  
-          "position": [@positionMask](#positionmask)  
+          "position-x": [@position](#position),  
+          "position-y": [@position](#position)  
      },  
      "properties": {  
           [@transitionType](#transitiontype): [**@Transition**](#transition),  
-          "fragments": [  
+          "structure": [  
                [**@Fragment**](#fragment)  
           ],  
           "spread": {  
@@ -170,12 +191,14 @@
           "snap-points": [  
                [**@SnapPoint**](#snappoint)  
           ],  
-          "background": [**@Background**](#background)  
+          "background": [@color](#color),   `or `[**`@Background`**](#background)`?`  
+          "links": [  
+               [**@Link**](#link)    *`Only links of type "alternate" are valid. They provide fallback/poster for this page.`*  
+          ]  
      },  
      "layers": [  
           [**@Layer**](#layer)  
-     ],  
-     "cover": [**@Cover**](#cover)  
+     ]  
 }
 
 **Note:**  
@@ -187,7 +210,7 @@ Examples:
 
 ![Example 1](resources/Page-Unspecified.png "Example 1") | ![Example 2](resources/Page-1.png "Example 2") | ![Example 3](resources/Page-2.png "Example 3")
 ---|---|---
-Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height": 300,<br/>    "fit": "both",<br/>    "position": "center"<br/>}  |  Page:<br/>{<br/>    "width": 1000,<br/>    "height": 300,<br/>    "fit": "4:3",<br/>    "position": "start\|center_vertical"<br/>}
+Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height": 300,<br/>    "fit": "both",<br/>    "position-x": "center",<br/>    "position-y": "center"<br/>}  |  Page:<br/>{<br/>    "width": 1000,<br/>    "height": 300,<br/>    "fit": "4:3",<br/>    "position-x": "start",<br/>    "position-y": "center"<br/>}
 
 
 ### Background
@@ -236,28 +259,24 @@ Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height"
      "type": [@resourceType](#resourcetype),  
      "width": [@uint](#uint),  
      "height": [@uint](#uint),  
-     "x": [@uint](#uint),  
-     "y": [@uint](#uint),   
-     "duration": [@duration](#duration)  
+     "x": [@ufloat](#ufloat),  
+     "y": [@ufloat](#ufloat)  
 }
 
 
 ### Fragment
 
 {  
-     "width": [@uint](#uint),  
-     "height": [@uint](#uint),  
-     "x": [@uint](#uint),  
-     "y": [@uint](#uint),  
-     *`"type": ("panel", "text"...)`?*  
+     "path": [@path](#path),  
+     "type": [@fragmentType](#fragmenttype)  
 }
 
 
 ### Layer
 
 {  
-     "width": [@uint](#uint),  
-     "height": [@uint](#uint),  
+     "width": [@ufloat](#ufloat),  
+     "height": [@ufloat](#ufloat),  
      "speed": [@float](#float),  
      "opacity": [@percentage](#percentage),  
      "rotation": {  
@@ -279,7 +298,7 @@ Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height"
           }  
      ],  
      "loops": [@uint](#uint),    `Default: 1 (no repeat)`  
-     "background": [**@Background**](#background),  
+     "background": [@color](#color),   `or `[**`@Background`**](#background)`?`  
      "animations": [  
           [**@Animation**](#animation)  
      ]  
@@ -301,15 +320,15 @@ Page:<br/>{<br/>}  |  Page:<br/>{<br/>    "width": 400,<br/>    "height"
 {  
      "start": {  
           "position": {  
-               "x": [@float](#float),  
-               "y": [@float](#float)  
+               "x": [@ufloat](#ufloat),  
+               "y": [@ufloat](#ufloat)  
           },  
           "delay": [@duration](#duration),  
-          "snap-point": "*`Snap point identifier`*"
+          "snap-point": "*`Snap point identifier`*"  
      },  
      "end": {  
-          "x": [@float](#float),  
-          "y": [@float](#float)  
+          "x": [@ufloat](#ufloat),  
+          "y": [@ufloat](#ufloat)  
      },  
      "duration": [@duration](#duration),  
      "timing-function": [@timingFunction](#timingfunction),  
@@ -396,13 +415,6 @@ Or "slow" or "fast" (these special values depend on the choice of the reader imp
 - `true`
 - `false`
 
-#### `resourceType`
-
-Image types:
-
-- "`image/png`"
-- "`image/jpeg`"
-
 #### `contributorType`
 
 - "`author`"
@@ -415,6 +427,25 @@ Image types:
 - "`penciler`"
 - "`letterer`"
 - "`narrator`"
+
+#### `linkRelationship`
+
+- "`alternate`"
+- "`contents`"
+- "`cover`"
+- "`manifest`"
+
+#### `resourceType`
+
+Image types:
+
+- "`image/png`"
+- "`image/jpeg`"
+
+#### `fragmentType`
+
+- "`panel`"
+- "`text`"
 
 #### `gradientType`
 
@@ -432,18 +463,15 @@ Image types:
 - "[`@uint`](#uint)`:`[`@uint`](#uint)": Exact ratio to display. Example: `4:3`.
 - "[`@uint`](#uint)`:`[`@uint`](#uint)`-`[`@uint`](#uint)`:`[`@uint`](#uint)": Min ratio and max ratio. Example: `1:1-4:3`. The min or the max ratio can be omitted to just define one of the 2 bounds. Example: `1:1-` (min "1:1" ratio) or `-4:3` (max "4:3" ratio).
 
-#### `positionMask`
+#### `position`
 
-Combination of these terms, separated by `|`:
 - "`start`"
 - "`end`"
 - "`top`"
 - "`bottom`"
 - "`center`"
-- "`center_horizontal`"
-- "`center_vertical`"
 
-> **Note:** The default position is `top|start`.
+> **Note:** The default position is `start`.
 
 #### `snap-alignment`
 
@@ -494,17 +522,17 @@ Combination of these terms, separated by `|`:
 
 *Rotation properties:*
 - "`rotation.x`"
-   - The value of this property must have the type [@int](#int)
+   - The value of this property must have the type [@float](#float)
 - "`rotation.y`"
-   - The value of this property must have the type [@int](#int)
+   - The value of this property must have the type [@float](#float)
 - "`rotation.z`"
-   - The value of this property must have the type [@int](#int)
+   - The value of this property must have the type [@float](#float)
 
 *Translation properties:*
 - "`translation.x`"
-   - The value of this property must have the type [@int](#int)
+   - The value of this property must have the type [@float](#float)
 - "`translation.y`"
-   - The value of this property must have the type [@int](#int)
+   - The value of this property must have the type [@float](#float)
 
 #### `timingFunction`
 
@@ -551,13 +579,17 @@ Sequence of:
 
   Command  |  Description  
 -----------|---------------  
-`M` *\(*`x`:[@float](#float)`,y`:[@float](#float)*\)+*  |  Absolute move to (`x`, `y`) points.  
-`m` *\(*`x`:[@float](#float)`,y`:[@float](#float)*\)+*  |  Relative move to (`x`, `y`) points.  
-`H` *\(*`x`:[@float](#float)*\)+*  |  Absolute horizontal move from current point to `x` coordinate.  
-`h` *\(*`x`:[@float](#float)*\)+*  |  Relative horizontal move from current point to `x` coordinate.  
-`V` *\(*`y`:[@float](#float)*\)+*  |  Absolute vertical move from current point to `y` coordinate.  
-`v` *\(*`y`:[@float](#float)*\)+*  |  Relative vertical move from current point to `y` coordinate.  
-`C` *\(*`x1`:[@float](#float)`,y1`:[@float](#float)` x2`:[@float](#float)`,y2`:[@float](#float)` x`:[@float](#float)`,y`:[@float](#float)*\)+*  |  Move in a cubic Bézier curve from the current point to absolute point (`x`, `y`), using (`x1`, `y1`) as the absolute control point at the beginning of the curve and (`x2`, `y2`) as the absolute control point at the end of the curve. 
-`c` *\(*`x1`:[@float](#float)`,y1`:[@float](#float)` x2`:[@float](#float)`,y2`:[@float](#float)` x`:[@float](#float)`,y`:[@float](#float)*\)+*  |  Move in a cubic Bézier curve from the current point to relative point (`x`, `y`), using (`x1`, `y1`) as the relative control point at the beginning of the curve and (`x2`, `y2`) as the relative control point at the end of the curve.  
-`Z`  |  Move to the initial point (same as "`z`").  
-`z`  |  Move to the initial point (same as "`Z`").  
+`M` `x`:[@ufloat](#ufloat)`,y`:[@ufloat](#ufloat)  |  Absolute move to (`x`, `y`) points.  
+`L` *\(*`x`:[@ufloat](#ufloat)`,y`:[@ufloat](#ufloat)*\)+*  |  Absolute line from current point to (`x`, `y`) points.  
+`l` *\(*`x`:[@float](#float)`,y`:[@float](#float)*\)+*  |  Relative line from current point to (`x`, `y`) points.  
+`H` *\(*`x`:[@ufloat](#ufloat)*\)+*  |  Absolute horizontal line from current point to `x` coordinate.  
+`h` *\(*`x`:[@float](#float)*\)+*  |  Relative horizontal line from current point to `x` coordinate.  
+`V` *\(*`y`:[@ufloat](#ufloat)*\)+*  |  Absolute vertical line from current point to `y` coordinate.  
+`v` *\(*`y`:[@float](#float)*\)+*  |  Relative vertical line from current point to `y` coordinate.  
+`C` *\(*`x1`:[@ufloat](#ufloat)`,y1`:[@ufloat](#ufloat)` x2`:[@ufloat](#ufloat)`,y2`:[@ufloat](#ufloat)` x`:[@ufloat](#ufloat)`,y`:[@ufloat](#ufloat)*\)+*  |  Cubic Bézier curve from the current point to absolute point (`x`, `y`), using (`x1`, `y1`) as the absolute control point at the beginning of the curve and (`x2`, `y2`) as the absolute control point at the end of the curve.  
+`c` *\(*`x1`:[@float](#float)`,y1`:[@float](#float)` x2`:[@float](#float)`,y2`:[@float](#float)` x`:[@float](#float)`,y`:[@float](#float)*\)+*  |  Cubic Bézier curve from the current point to relative point (`x`, `y`), using (`x1`, `y1`) as the relative control point at the beginning of the curve and (`x2`, `y2`) as the relative control point at the end of the curve.  
+`Z`  |  Line to the initial point (same as "`z`").  
+`z`  |  Line to the initial point (same as "`Z`").  
+
+**Note:**  
+A path must start with an `M` command (and cannot contains other `M` commands).

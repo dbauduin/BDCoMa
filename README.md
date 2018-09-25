@@ -78,14 +78,16 @@ Consequently, I propose modifying the page structure like this:
 >      "width": [@uint](manifest.md#uint),  
 >      "height": [@uint](manifest.md#uint),  
 >      "fit": [@fitType](manifest.md#fittype),  
->      "position": [@positionMask](manifest.md#positionmask),  
+>      "position-x": [@position](manifest.md#position),  
+>      "position-y": [@position](manifest.md#position),  
 >      "content": {  
 >           "type": [@resourceType](manifest.md#resourcetype),  
 >           "href": "*`Path to resource`*",  
 >           "width": [@uint](manifest.md#uint),  
 >           "height": [@uint](manifest.md#uint),  
 >           "fit": [@fitType](manifest.md#fittype),  
->           "position": [@positionMask](manifest.md#positionmask)  
+>           "position-x": [@position](manifest.md#position),  
+>           "position-y": [@position](manifest.md#position)  
 >      },  
 >      "layers": [  
 >           [**@Layer**](manifest.md#layer)  
