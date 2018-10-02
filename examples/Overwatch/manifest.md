@@ -40,21 +40,16 @@ Example of a turbomedia, adapted from this:
         "readingProgression": "ltr",  
         "numberOfPages": 2,  
         "position": 0,  
-        "description": "According to legend, a dangerous Yeti roams the mountain peaks above Nepal. Who will be brave enough to hunt down this terrifying creature? Who will have the wits to outmaneuver its raw strength and power? Who else, but Mei and Snowball!",  
-        "cover": {  
-            "href": "[cover.png](cover.png) ![cover.png](thumbnails/cover.png "cover.png"),  
-            "type": "image/png",  
-            "width": 1194,  
-            "height": 670  
-        }  
+        "description": "According to legend, a dangerous Yeti roams the mountain peaks above Nepal. Who will be brave enough to hunt down this terrifying creature? Who will have the wits to outmaneuver its raw strength and power? Who else, but Mei and Snowball!"  
     },  
   
-    "spine": [  
+    "readingOrder": [  
         {  
             "width": 568,  
             "height": 320,  
             "fit": "both",  
-            "position": "center",  
+            "position-x": "center",  
+            "position-y": "center",  
             "properties": {  
                 "background": {  
                     "gradient": {  
@@ -84,13 +79,16 @@ Example of a turbomedia, adapted from this:
                     "effect": "wipe",  
                     "from": "bottom",  
                     "duration": "slow"  
-                }  
-            },  
-            "cover": {  
-                "href": "[cover1.png](cover1.png) ![cover1.png](thumbnails/cover1.png "cover1.png"),  
-                "type": "image/png",  
-                "width": 720,  
-                "height": 406  
+                },  
+                "links": [  
+                    {  
+                        "rel": "alternate",  
+                        "type": "image/png",  
+                        "href": "[cover1.png](cover1.png) ![cover1.png](thumbnails/cover1.png "cover1.png"),  
+                        "width": 720,  
+                        "height": 406  
+                    }  
+                ]  
             },  
             "layers": [  
                 {  
@@ -207,7 +205,8 @@ Example of a turbomedia, adapted from this:
             "width": 568,  
             "height": 320,  
             "fit": "both",  
-            "position": "center",  
+            "position-x": "center",  
+            "position-y": "center",  
             "properties": {  
                 "background": {  
                     "gradient": {  
@@ -237,13 +236,16 @@ Example of a turbomedia, adapted from this:
                     "effect": "wipe",  
                     "from": "bottom",  
                     "duration": "slow"  
-                }  
-            },  
-            "cover": {  
-                "href": "[cover2.png](cover2.png) ![cover2.png](thumbnails/cover2.png "cover2.png"),  
-                "type": "image/png",  
-                "width": 720,  
-                "height": 406  
+                },  
+                "links": [  
+                    {  
+                        "rel": "alternate",  
+                        "type": "image/png",  
+                        "href": "[cover2.png](cover2.png) ![cover2.png](thumbnails/cover2.png "cover2.png"),  
+                        "width": 720,  
+                        "height": 406  
+                    }  
+                ]  
             },  
             "layers": [  
                 {  
@@ -496,7 +498,15 @@ Example of a turbomedia, adapted from this:
   
     "renditions": [],  
   
-    "resources": [],  
+    "resources": [  
+        {  
+            "rel": "cover",  
+            "type": "image/png",  
+            "href": "[cover.png](cover.png) ![cover.png](thumbnails/cover.png "cover.png"),  
+            "width": 1194,  
+            "height": 670  
+        }  
+    ],  
   
     "links": []  
 }

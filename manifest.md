@@ -467,8 +467,6 @@ Image types:
 
 - "`start`"
 - "`end`"
-- "`top`"
-- "`bottom`"
 - "`center`"
 
 > **Note:** The default position is `start`.

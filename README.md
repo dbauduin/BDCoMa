@@ -100,7 +100,7 @@ Consequently, I propose modifying the page structure like this:
 This way, a page is visually defined by its size (`width`, `height`), a resource (`content`) and layers (`layers`) on top of it.  
 ![Page description](resources/Page-Description1.png "Page description")  
   
-The behaviour of this page inside the window (final size, position, scroll...) is determined by its original size, plus the `fit` and `position` parameters.  
+The behaviour of this page inside the window (final size, position, scroll...) is determined by its original size, plus the `fit` and `position-x`/`position-y` parameters.  
 ![Page description](resources/Page-Description2.png "Page description")  
   
 For more information, see [Page](manifest.md#page).

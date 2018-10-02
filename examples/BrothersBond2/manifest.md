@@ -32,16 +32,10 @@ Example of a scrollable book with animations, adapted from this:
         "publisher": {  
             "name": "Webtoon"  
         },  
-        "description": "An exiled prince and his two blind samurai protectors set on a dangerous journey to reclaim their kingdom from demonic forces.",  
-        "cover": {  
-            "href": "[cover.png](cover.png)" ![cover.png](images/thumbnails/cover.png "cover.png"),  
-            "type": "image/png",  
-            "width": 1040,  
-            "height": 250  
-        }  
+        "description": "An exiled prince and his two blind samurai protectors set on a dangerous journey to reclaim their kingdom from demonic forces."  
     },  
   
-    "spine": [],  
+    "readingOrder": [],  
   
     "sections": [  
         {  
@@ -51,15 +45,18 @@ Example of a scrollable book with animations, adapted from this:
                 "identifier": "urn:webtoons:1191#1",  
                 "language": "en",  
                 "publicationDate": "2017-11-08T00:00:00Z",  
-                "position": 1,  
-                "cover": {  
-                    "href": "[cover1.png](images/cover1.png)" ![cover1.png](images/thumbnails/cover1.png "cover1.png"),  
+                "position": 1  
+            },  
+            "readingOrder": [],  
+            "resources": [  
+                {  
+                    "rel": "cover",  
                     "type": "image/png",  
+                    "href": "[cover1.png](images/cover1.png)" ![cover1.png](images/thumbnails/cover1.png "cover1.png"),  
                     "width": 680,  
                     "height": 590  
                 }  
-            },  
-            "spine": []  
+            ]  
         },  
         {  
             "metadata": {  
@@ -87,20 +84,14 @@ Example of a scrollable book with animations, adapted from this:
                 "readingProgression": "ttb",  
                 "numberOfPages": 1,  
                 "position": 2,  
-                "description": "Young prince Yoshi is sent to train in self defence but has other plans.",  
-                "cover": {  
-                    "href": "[cover2.jpg](images/cover2.jpg)" ![cover2.jpg](images/thumbnails/cover2.jpg "cover2.jpg"),  
-                    "type": "image/png",  
-                    "width": 800,  
-                    "height": 600  
-                }  
+                "description": "Young prince Yoshi is sent to train in self defence but has other plans."  
             },  
-            "spine": [  
+            "readingOrder": [  
                 {  
                     "width": 800,  
                     "height": 24003,  
                     "fit": "width",  
-                    "position": "top",  
+                    "position-y": "start",  
                     "properties": {  
                         "background": {  
                             "color": "#ffffff"  
@@ -266,13 +257,30 @@ Example of a scrollable book with animations, adapted from this:
                         }
                     ]  
                 }  
+            ],  
+            "resources": [  
+                {  
+                    "rel": "cover",  
+                    "type": "image/jpeg",  
+                    "href": "[cover2.jpg](images/cover2.jpg)" ![cover2.jpg](images/thumbnails/cover2.jpg "cover2.jpg"),  
+                    "width": 800,  
+                    "height": 600  
+                }  
             ]  
         }  
     ],  
   
     "renditions": [],  
   
-    "resources": [],  
+    "resources": [  
+        {  
+            "rel": "cover",  
+            "type": "image/png",  
+            "href": "[cover.png](cover.png)" ![cover.png](images/thumbnails/cover.png "cover.png"),  
+            "width": 1040,  
+            "height": 250  
+        }  
+    ],  
   
     "links": []  
 }  

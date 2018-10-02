@@ -26,28 +26,23 @@
         },
         "readingProgression": "ltr",
         "numberOfPages": 1,
-        "description": "Electrozz est une histoire courte, humoristique, racontant les mésaventures d'un jeune homme qui drague sa voisine mais qui va voir ses plans bouleversés par le pouvoir foudroyant de la souris électrique. Electrozz est une bande-dessinée horizontale composée de 5 bandes d'une quinzaine de cases chacune.",
-        "cover": {
-            "href": "cover.jpg",
-            "type": "image/jpeg",
-            "width": 410,
-            "height": 587
-        }
+        "description": "Electrozz est une histoire courte, humoristique, racontant les mésaventures d'un jeune homme qui drague sa voisine mais qui va voir ses plans bouleversés par le pouvoir foudroyant de la souris électrique. Electrozz est une bande-dessinée horizontale composée de 5 bandes d'une quinzaine de cases chacune."
     },
 
-    "spine": [
+    "readingOrder": [
         {
             "width": 5012,
             "height": 600,
             "fit": "4:3",
-            "position": "center",
+            "position-x": "center",
+            "position-y": "center",
             "content": {
                 "type": "image/jpeg",
                 "href": "images/background.jpg",
                 "width": 800,
                 "height": 600,
                 "fit": "height",
-                "position": "top|start"
+                "position-x": "start"
             },
             "properties": {
                 "snap-points": [
@@ -591,7 +586,15 @@
 
     "renditions": [],
 
-    "resources": [],
+    "resources": [
+        {
+            "rel": "cover",
+            "type": "image/jpeg",
+            "href": "cover.jpg",
+            "width": 410,
+            "height": 587
+        }
+    ],
 
     "links": []
 }
