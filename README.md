@@ -36,6 +36,7 @@ Here is a suggestion of manifest specifications, in relation with the [EDRLab Wo
 ▶ **Other platforms implementation:**
    - [**Madefire** *(example of a turbomedia)*](others/Madefire/index.md)
    - [**Webtoon** *(example of a scrollable book)*](others/Webtoon/episodeInfo.md)
+   - [**ComiXology** *(example of a scrollable book)*](others/ComiXology/World_of_Warcraft-Legion.md)
 
 
 ## Notes
